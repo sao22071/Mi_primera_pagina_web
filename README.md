@@ -25,3 +25,7 @@ _Otra alternativa_
 Dar Click obre la lista de archivos, da clic en  ↓ Code.
 Dar click en Download ZIP 
 ```
+
+## Autores ✒️
+* **Santiago Alvarez Olivera** - *Tecnologia en Desarrollo de software IUDigital de Antioquia* - [sao22071](https://github.com/sao22071)
+
