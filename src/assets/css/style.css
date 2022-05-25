@@ -1,3 +1,9 @@
+main {
+    background-color: #fad9d9;
+    height: auto;
+    width: auto;
+}
+
 .icon {
     display: flex;
 }
@@ -8,14 +14,30 @@ h1 {
 
 .card {
     box-shadow: 0px 4px 8px 0 #ABAAAA;
+    transition: 0, 3s;
     border-radius: 5px;
-    width: 30%;
-    padding: 20px;
-    margin-top: 20px;
+    background-color: white;
+    width: 300px;
+    height: 400px;
+    margin: 10px;
 }
 
 .card:hover {
     box-shadow: 0px 8px 16px 0 #7a7a7a;
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+}
+
+.card .container {
+    padding: 2px 16px;
+}
+
+.card .container h4 {
+    font-style: inherit;
+    text-align: center;
 }
 
 
@@ -44,31 +66,84 @@ a {
 }
 
 
-li a {
-    display: block;
-    width: 150px;
-}
-
-
-.button {
-    background-color: #8d8d8d;
-    border-color: transparent;
-    border-radius: 5px;
-    color: white;
-    padding: 5px 5px;
-
-
-}
-
 .form {
     margin-top: 20px;
+    margin-top: 5px;
 }
 
 .links-e {
+    padding: 2px 16px;
+}
+
+.container-cards {
+    display: flex;
+    justify-content: center;
+}
+
+.card button {
+    padding: 10px;
+    background-color: #de1822;
+    color: white;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 0px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.menu a {
+    color: grey;
+    letter-spacing: 0.1rem;
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s linear;
+}
+
+
+
+.menu a:hover {
+    background-color: rgba(255, 160, 136, 0.678);
+    padding-left: 1.5rem;
+}
+
+.container-cards {
     display: flex;
     flex-direction: column;
 }
 
-.links-e > a {
-    margin-top: 5px;
+@media (min-width:800px) {
+
+    .nav-main {
+        max-width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+    .menu {
+        height: auto;
+        display: flex;
+        justify-content: end;
+    }
+
+    .menu a {
+        padding: 0;
+        margin: 0 0.5rem;
+    }
+
+    .menu a:hover {
+        padding: 0;
+        background: transparent;
+        color: rgba(235, 78, 38, 0.678);
+
+    }
+
+    .container-cards {
+        display: flex;
+        flex-direction: row;
+    }
+
+
 }
