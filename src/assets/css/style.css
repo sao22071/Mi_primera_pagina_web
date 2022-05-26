@@ -4,12 +4,17 @@ main {
     width: auto;
 }
 
+body {
+    overflow: hidden;
+}
+
 .icon {
     display: flex;
 }
 
 h1 {
     color: rgba(235, 78, 38, 0.678);
+    line-height: 200%;
 }
 
 .card {
@@ -80,7 +85,7 @@ a {
     justify-content: center;
 }
 
-.card button {
+button {
     padding: 10px;
     background-color: #de1822;
     color: white;
@@ -91,6 +96,11 @@ a {
     border-radius: 5px;
 }
 
+button:hover {
+    box-shadow: 0 0 10px 0 #9f080f inset, 0 0 10px 4px #9f080f;
+}
+
+
 .menu a {
     color: grey;
     letter-spacing: 0.1rem;
@@ -98,8 +108,6 @@ a {
     padding: 0.5rem 1rem;
     transition: all 0.3s linear;
 }
-
-
 
 .menu a:hover {
     background-color: rgba(255, 160, 136, 0.678);
@@ -109,7 +117,35 @@ a {
 .container-cards {
     display: flex;
     flex-direction: column;
+    height: 89vh;
 }
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 89vh;
+}
+
+.form-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+}
+
+.form-control-inputs {
+    width: 90vw;
+    padding: 3rem;
+    border: 0px;
+    border-radius: 20px;
+}
+
+.form-control-inputs form > * {
+    margin-top: 15px;
+}
+
 
 @media (min-width:800px) {
 
@@ -145,5 +181,7 @@ a {
         flex-direction: row;
     }
 
-
+    .form-control-inputs {
+        width: 600px;
+    }
 }

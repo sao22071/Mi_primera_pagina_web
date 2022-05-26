@@ -11,61 +11,83 @@
         name="viewport"
         content="width=device-width, initial-scale=1.0"
     >
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+        crossorigin="anonymous"
+    >
     <link
         rel="stylesheet"
         href="./src/assets/css/style.css"
     >
-    <title>Document</title>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"
+    ></script>
+
+
+    <title>The Store</title>
 </head>
 
 <body>
     <header>
-        <div class="icon">
-            <img
-                src="./src/assets/png/store icon.png"
-                alt="logo"
-                width="70px"
-            >
-            <h1>TheStore</h1>
-        </div>
+        <div class="nav-main">
+            <div class="icon">
+                <img
+                    src="./src/assets/png/store icon.png"
+                    alt="logo"
+                    width="70px"
+                >
+                <h1>TheStore</h1>
+            </div>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Products</a></li>
-                <li><a href="#">Car</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="./newProduct.html">New Product</a></li>
-            </ul>
-        </nav>
+            <nav>
+                <ul class="menu">
+                    <li><a href="./index.html">Products</a></li>
+                    <li><a href="#">Car</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="./newProduct.html">New Product</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <h1>TheStore</h1>
-        <div class="form">
-            <form>
-                <label for="product_name">Name</label>
-                <input
-                    type="text"
-                    name="product_name"
-                    id="product_name"
-                >
-                <label for="cant_product">Price</label>
-                <input
-                    type="number"
-                    name="product_price"
-                    id="product_price"
-                    min="0"
-                >
-                <label for="inventory">Inventory</label>
-                <input
-                    type="number"
-                    name="inventory"
-                    id="inventory"
-                    min="0"
-                >
-                <button class="button">Create Product</button>
-            </form>
+    <main class="form-container">
+        <div class="form-control form-control-inputs">
+            <h1>New Product</h1>
+            <div class="form">
+                <form class="form-product ">
+                    <label for="product_name">Name:</label>
+                    <input
+                        type="text"
+                        name="product_name"
+                        id="product_name"
+                        class="form-control"
+                    >
+                    <label for="cant_product">Price:</label>
+                    <input
+                        type="number"
+                        name="product_price"
+                        id="product_price"
+                        min="0"
+                        class="form-control"
+                    >
+                    <label for="inventory">Inventory:</label>
+                    <input
+                        type="number"
+                        name="inventory"
+                        id="inventory"
+                        min="0"
+                        class="form-control"
+                    >
+                    <button>Create Product</button>
+                </form>
+            </div>
         </div>
+
     </main>
 
 </body>
