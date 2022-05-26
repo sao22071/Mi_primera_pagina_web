@@ -1,14 +1,21 @@
 # Mi_primera_pagina_web
+
 _Actividad de aprendizaje 1 - Ingeniería web I_
 
-### Intalación 
+# Tecnologías utilizadas
+
+_Boostrap_
+_Flexbox_
+
+### Instalación
+
 _Lo que necesitas saber para instalar la página web de manera remota_
 
 _Para clonar el repositorio lo primero que debes hacer es:_
 
 ```
 Sobre la lista de archivos, da clic en  ↓ Code.
-En HTTP selecciona el link 
+En HTTP selecciona el link
 ```
 
 _Escribe git clone, y luego pega la URL que copiaste antes._
@@ -23,9 +30,9 @@ _Otra alternativa_
 
 ```
 Dar Click obre la lista de archivos, da clic en  ↓ Code.
-Dar click en Download ZIP 
+Dar click en Download ZIP
 ```
 
 ## Autores ✒️
-* **Santiago Alvarez Olivera** - *Tecnologia en Desarrollo de software IUDigital de Antioquia* - [sao22071](https://github.com/sao22071)
 
+- **Santiago Alvarez Olivera** - _Tecnologia en Desarrollo de software IUDigital de Antioquia_ - [sao22071](https://github.com/sao22071)
