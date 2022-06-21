@@ -47,7 +47,7 @@
             <nav>
                 <ul class="menu">
                     <li><a href="./index.html">Products</a></li>
-                    <li><a href="#">Car</a></li>
+                    <li><a href="./car.html">Car</a></li>
                     <li><a href="#">Login</a></li>
                     <li><a href="./newProduct.html">New Product</a></li>
                 </ul>
@@ -75,11 +75,18 @@
                         min="0"
                         class="form-control"
                     >
-                    <label for="inventory">Inventory:</label>
+                    <label for="quantity">Quantity:</label>
                     <input
                         type="number"
-                        name="inventory"
-                        id="inventory"
+                        name="quantity"
+                        id="quantity"
+                        min="0"
+                        class="form-control"
+                    ><label for="quantity">Image:</label>
+                    <input
+                        type="image"
+                        name="quantity"
+                        id="quantity"
                         min="0"
                         class="form-control"
                     >
@@ -91,5 +98,6 @@
     </main>
 
 </body>
+<script src="./src/js/card_product.js"></script>
 
 </html>
